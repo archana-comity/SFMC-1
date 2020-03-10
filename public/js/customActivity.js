@@ -56,7 +56,7 @@ define([
            const accountSid = 'ACa24e0798bb0996d1b1cd24786b42c6d8';
             const authToken = '632b8779e6e54a8922d13619507f5b7a';
             //const client = require('twilio')(accountSid, authToken);
-            const client = Twilio.init(accountSid, authToken);
+            const client = Twilio(accountSid, authToken);
 
             client.messages
                   .create({
